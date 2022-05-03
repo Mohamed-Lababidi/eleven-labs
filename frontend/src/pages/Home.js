@@ -20,7 +20,7 @@ const Home = () => {
 
   const onDeleteUser = async (id) => {
     if (
-      window.confirm("Are you sure that you wanted to delete that user record")
+      window.confirm("Etes-vous sur de vouloir supprimer cet utilisateur ? ")
     ) {
       const response = await axios.delete(`http://localhost:8080/user/${id}`);
       if (response.status === 200) {
@@ -37,7 +37,7 @@ const Home = () => {
       <table className="styled-table">
         <thead>
           <tr>
-             <th style={{ textAlign: "center" }}>Numero</th>
+            <th style={{ textAlign: "center" }}>Numero</th>
             <th style={{ textAlign: "center" }}>Nom</th>
             <th style={{ textAlign: "center" }}>Prenom</th>
             <th style={{ textAlign: "center" }}>Astronaute ?</th>
