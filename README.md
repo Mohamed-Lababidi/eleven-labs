@@ -1,2 +1,2 @@
 # eleven-labs
-test technique eleven labs 
+test technique Eleven Labs 
